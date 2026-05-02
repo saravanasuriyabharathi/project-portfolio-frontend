@@ -1,0 +1,279 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f4ff;
+  color: #222;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* navbar */
+nav {
+  background-color: #1a73e8;
+  padding: 12px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .logo {
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav .nav-links a {
+  color: white;
+  margin-left: 18px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+nav .nav-links a:hover {
+  text-decoration: underline;
+}
+
+nav .nav-links button {
+  background: white;
+  color: #1a73e8;
+  border: none;
+  padding: 6px 12px;
+  margin-left: 18px;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* cards */
+.card {
+  background: white;
+  border: 1px solid #dde3f0;
+  border-radius: 6px;
+  padding: 16px;
+  margin-bottom: 14px;
+}
+
+.card h3 {
+  margin-bottom: 6px;
+  color: #1a73e8;
+}
+
+/* forms */
+.form-group {
+  margin-bottom: 14px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+/* buttons */
+.btn {
+  padding: 8px 18px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background-color: #1a73e8;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #1557b0;
+}
+
+.btn-danger {
+  background-color: #e53935;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #b71c1c;
+}
+
+.btn-sm {
+  padding: 4px 10px;
+  font-size: 13px;
+}
+
+/* page header */
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.page-header h2 {
+  font-size: 22px;
+}
+
+/* auth pages */
+.auth-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f4ff;
+}
+
+.auth-box {
+  background: white;
+  padding: 32px;
+  border-radius: 8px;
+  border: 1px solid #dde3f0;
+  width: 360px;
+}
+
+.auth-box h2 {
+  margin-bottom: 20px;
+  color: #1a73e8;
+}
+
+/* badges */
+.badge {
+  display: inline-block;
+  padding: 2px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-left: 6px;
+}
+
+.badge-todo { background: #e0e0e0; color: #555; }
+.badge-inprogress { background: #fff3cd; color: #856404; }
+.badge-done { background: #d4edda; color: #155724; }
+.badge-low { background: #e8f5e9; color: #388e3c; }
+.badge-medium { background: #fff8e1; color: #f57f17; }
+.badge-high { background: #fce4ec; color: #c62828; }
+.badge-admin { background: #1a73e8; color: white; }
+.badge-member { background: #e8eaf6; color: #3949ab; }
+
+/* error msg */
+.error-msg {
+  color: red;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+/* stats row on dashboard */
+.stats-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.stat-box {
+  background: white;
+  border: 1px solid #dde3f0;
+  border-radius: 6px;
+  padding: 16px 24px;
+  flex: 1;
+  min-width: 130px;
+  text-align: center;
+}
+
+.stat-box h4 {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 6px;
+}
+
+.stat-box p {
+  font-size: 26px;
+  font-weight: bold;
+  color: #1a73e8;
+}
+
+/* task list */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 14px;
+  background: white;
+  border: 1px solid #dde3f0;
+  border-radius: 5px;
+  margin-bottom: 8px;
+}
+
+.task-item .task-title {
+  font-size: 15px;
+}
+
+.task-item .task-meta {
+  font-size: 12px;
+  color: #888;
+  margin-top: 3px;
+}
+
+.task-actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+/* modal overlay */
+.modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-box {
+  background: white;
+  padding: 24px;
+  border-radius: 8px;
+  width: 420px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.modal-box h3 {
+  margin-bottom: 16px;
+  color: #1a73e8;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 16px;
+}
